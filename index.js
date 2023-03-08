@@ -1,15 +1,14 @@
-//🎮Discord.js
+//定義
 const { Client, Events, GatewayIntentBits } = require("discord.js");
 
 //🔷権限
 const client = new Client();
-client.setMaxListeners(0);
-client.options.restRequestTimeout = 25000;
-client.options.restSweepInterval;
 
 //🔧設定
+const token = process.env.token;
 const prefix = process.env.prefix;
 const fs = require("fs");
+const path = require("path");
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -28,7 +27,7 @@ client.once(Events.ClientReady, (c) => {
       name: "コマンド名",
       description: "説明",
     },
-//オプション付きコマンドを  
+//オプション付きコマンド
     {
       name: "コマンド名",
       description: "説明",
@@ -46,4 +45,4 @@ client.once(Events.ClientReady, (c) => {
 });
 
 //🟢ログイン
-client.login(process.env.token);
+client.login(token);
