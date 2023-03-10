@@ -24,15 +24,15 @@ client.once(Events.ClientReady, (c) => {
   const data = [
 //通常コマンド
     {
-      name: "コマンド名",
-      description: "説明",
+      name: "test",
+      description: "コマンドの説明",
     },
 //オプション付きコマンド
     {
-      name: "コマンド名",
-      description: "説明",
+      name: "test2",
+      description: "コマンドの説明",
       options: [{
-      name: "オプション名",
+      name: "option",
           description: "オプションの説明",
           type: 3,
 //SUB_COMMAND 1, SUB_COMMAND_GROUP 2, STRING 3, INTEGER 4, BOOLEAN 5, USER 6, CHANNEL 7, ROLE 8, MENTIONABLE 9, NUMBER 10, ATTACHMENT 11
