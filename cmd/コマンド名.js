@@ -1,12 +1,12 @@
-function support(client) {
+function test(client) {
   client.on("interactionCreate", async (Interaction) => {
     if (!Interaction.isCommand()) {
       return;
     }
-    if (Interaction.commandName === "support") {
+    if (Interaction.commandName === "test") {
       Interaction.reply("コマンドが実行されました");
     }
   });
 }
 
-module.exports = support;
+module.exports = test;
