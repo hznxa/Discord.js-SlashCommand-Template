@@ -13,10 +13,10 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 //📁cmdファイルを読み込む
-const help = require("./cmd/help.js");
-help(client);
-const embed = require("./cmd/embed.js");
-embed(client);
+const test = require("./cmd/test.js");
+test(client);
+const test2 = require("./cmd/test2.js");
+test2(client);
 
 //🔋起動
 client.once(Events.ClientReady, (c) => {
